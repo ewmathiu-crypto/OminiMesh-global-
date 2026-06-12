@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { StructuredData } from "@/components/StructuredData";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,7 +29,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950 text-white`}
       >
-        <StructuredData />
         {children}
       </body>
     </html>
