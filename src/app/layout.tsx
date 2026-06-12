@@ -27,9 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <StructuredData />
-        {children}
+        <div className="min-h-screen bg-slate-950 text-white">
+          {children}
+        </div>
       </body>
     </html>
   );
