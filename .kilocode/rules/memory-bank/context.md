@@ -88,4 +88,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
-| 2026-06-12 | Updated brand identity to OminiMesh Global, refreshed SVG wordmark, homepage branding, and memory bank context |
+| 2026-06-12 | Updated brand identity to OminiMesh Global, refreshed two-tone SVG wordmark, homepage branding, and memory bank context |
