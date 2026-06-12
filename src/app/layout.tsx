@@ -13,9 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OminiMesh",
+  title: "OminiMesh | One intelligent internet for the planet.",
   description:
-    "OminiMesh is an AI-powered global connectivity platform unifying Wi-Fi, fiber, towers, satellites, eSIM, payments, and intelligent routing.",
+    "OminiMesh unifies Wi-Fi, fiber, towers, satellites, eSIM, payments, and AI routing into one affordable, global connectivity platform for travelers, businesses, and partners.",
+  keywords: ["OminiMesh", "global internet", "AI routing", "eSIM", "Mi-Fi", "Wi-Fi", "connectivity"],
+  openGraph: {
+    title: "OminiMesh | One intelligent internet for the planet.",
+    description:
+      "AI-powered connectivity across Wi-Fi, fiber, towers, satellites, eSIM, payments, and routing.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
