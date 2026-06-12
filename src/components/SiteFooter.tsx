@@ -1,5 +1,11 @@
-import { Logo } from "@/components/Logo";
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
+
+const linkVariants = {
+  base: "transition hover:text-cyan-300",
+  active: "text-white",
+  default: "text-slate-500",
+};
 
 export function SiteFooter() {
   return (
@@ -10,19 +16,19 @@ export function SiteFooter() {
         </span>
       </Link>
       <div className="flex flex-wrap gap-x-6 gap-y-2">
-        <Link href="/" className="transition hover:text-cyan-300">Home</Link>
-        <Link href="/about" className="transition hover:text-cyan-300">About</Link>
-        <Link href="/partners" className="transition hover:text-cyan-300">Partners</Link>
-        <Link href="/products" className="transition hover:text-cyan-300">Products</Link>
-        <Link href="/card" className="transition hover:text-cyan-300">Card</Link>
-        <Link href="/sim" className="transition hover:text-cyan-300">SIM</Link>
-        <Link href="/legal" className="transition hover:text-cyan-300">Legal</Link>
-        <Link href="/terms" className="transition hover:text-cyan-300">Terms</Link>
-        <Link href="/privacy-policy" className="transition hover:text-cyan-300">Privacy Policy</Link>
-        <Link href="/contact" className="transition hover:text-cyan-300">Contact</Link>
-        <Link href="/kenya" className="transition hover:text-cyan-300">Kenya</Link>
-        <Link href="/faq" className="transition hover:text-cyan-300">FAQ</Link>
-      </div>
+        <Link href="/" className={`${linkVariants.base} ${linkVariants.default}`}>Home</Link>
+        <Link href="/about" className={`${linkVariants.base} ${linkVariants.default}`}>About</Link>
+        <Link href="/partners" className={`${linkVariants.base} ${linkVariants.default}`}>Partners</Link>
+        <Link href="/products" className={`${linkVariants.base} ${linkVariants.default}`}>Products</Link>
+        <Link href="/card" className={`${linkVariants.base} ${linkVariants.default}`}>Card</Link>
+        <Link href="/sim" className={`${linkVariants.base} ${linkVariants.default}`}>SIM</Link>
+        <Link href="/legal" className={`${linkVariants.base} ${linkVariants.default}`}>Legal</Link>
+        <Link href="/terms" className={`${linkVariants.base} ${linkVariants.default}`}>Terms</Link>
+        <Link href="/privacy-policy" className={`${linkVariants.base} ${linkVariants.default}`}>Privacy Policy</Link>
+        <Link href="/contact" className={`${linkVariants.base} ${linkVariants.default}`}>Contact</Link>
+        <Link href="/kenya" className={`${linkVariants.base} ${linkVariants.default}`}>Kenya</Link>
+        <Link href="/faq" className={`${linkVariants.base} ${linkVariants.default}`}>FAQ</Link>
+       </div>
       <div className="text-xs text-slate-600">© 2026 OminiMesh. All rights reserved.</div>
     </footer>
   );

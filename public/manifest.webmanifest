@@ -1,0 +1,17 @@
+{
+  "name": "OminiMesh",
+  "short_name": "OminiMesh",
+  "description": "One intelligent internet for the planet.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#29e8ff",
+  "icons": [
+    {
+      "src": "/omnimesh-mark.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

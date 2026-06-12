@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { rateLimit } from "@/lib/rate-limit";
 
 type WaitlistRole = "traveler" | "business" | "partner" | "investor";
 
@@ -23,6 +24,16 @@ function isValidEmail(email: string) {
 }
 
 export async function POST(request: Request) {
+  const ip = request.headers.get("x-forwarded-for") || "unknown";
+  const { allowed, remaining } = rateLimit(`waitlist:${ip}`, 5, 60_000);
+
+  if (!allowed) {
+    return NextResponse.json(
+      { message: "Too many requests. Please try again later." },
+      { status: 429 },
+    );
+  }
+
   try {
     const body = (await request.json()) as {
       email?: unknown;
@@ -65,12 +76,14 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         message: "Welcome to OminiMesh. You are on the waitlist.",
+        remaining,
       },
       { status: 201 },
     );
-  } catch {
+  } catch (error) {
+    console.error("[waitlist] Failed to process signup", error);
     return NextResponse.json(
-      { message: "Something went wrong. Please try again." },
+      { message: "Something went wrong. Please try again later." },
       { status: 500 },
     );
   }
