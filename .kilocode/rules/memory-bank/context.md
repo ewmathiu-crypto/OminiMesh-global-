@@ -2,9 +2,9 @@
 
 ## Current State
 
-**Project Status**: ✅ Active development
+**Project Status**: ✅ Production-ready frontend foundation
 
-Building the OminiMesh marketing site and product pages on Next.js 16 + Tailwind CSS 4.
+The OminiMesh marketing site and product pages are built on Next.js 16 + Tailwind CSS 4. Core pages, components, APIs, and SEO/resilience foundations are complete. Current focus is polish, content accuracy, and hardening.
 
 ## Recently Completed
 
@@ -28,20 +28,14 @@ Building the OminiMesh marketing site and product pages on Next.js 16 + Tailwind
 - [x] `/sim` page for Virtual/eSIM and Physical SIM kit
 - [x] Full link/button audit: pricing cards, waitlist anchors, and cross-page CTAs
 - [x] `/sitemap.xml` and `/robots.txt` for SEO
-- [x] PWA manifest for mobile install experience
-- [x] Global 404 page (`/not-found`)
-- [x] Security headers in `next.config.ts` (X-Frame-Options, CSP-ready, Referrer-Policy, Permissions-Policy)
-- [x] API rate limiting and validation for `/api/waitlist` and new `/api/contact`
-- [x] Contact page UX improved (API-backed form, loading/error/success states)
-- [x] `/sitemap.xml` and `/robots.txt` for SEO
 - [x] PWA manifest (`/manifest.webmanifest`) and favicon
 - [x] Global 404 page (`/not-found.tsx`)
 - [x] Security headers in `next.config.ts` (X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Referrer-Policy, Permissions-Policy)
 - [x] API rate limiting and validation for `/api/waitlist`, `/api/contact`, and new `/api/newsletter`
-- [x] JSON-LD structured data for Organization and WebSite
 - [x] Cookie consent banner client component
 - [x] Newsletter capture component and API
 - [x] Contact form skeleton/loading state component
+- [x] Fixed blank preview issue caused by stale `StructuredData` import in root layout
 
 ## Current Structure
 
@@ -50,27 +44,28 @@ Building the OminiMesh marketing site and product pages on Next.js 16 + Tailwind
 | `src/app/page.tsx` | Home page | ✅ Ready |
 | `src/app/layout.tsx` | Root layout | ✅ Ready |
 | `src/app/globals.css` | Global styles | ✅ Ready |
-| `public/omnimesh-logo.svg` | OminiMesh Global two-tone wordmark logo | ✅ Added |
-| `public/omnimesh-mark.svg` | OminiMesh Global app/fav icon mark | ✅ Added |
-| `src/components/Logo.tsx` | Reusable OminiMesh Global logo component | ✅ Added |
-| `src/components/FeatureCard.tsx` | Landing page feature card component | ✅ Added |
-| `src/components/PricingCard.tsx` | Landing page pricing card component | ✅ Added |
-| `src/components/WaitlistForm.tsx` | Client-side waitlist form component | ✅ Added |
-| `src/app/api/waitlist/route.ts` | Prototype waitlist API route | ✅ Added |
-| `.kilocode/` | AI context & recipes | ✅ Ready |
+| `public/omnimesh-logo.svg` | OminiMesh wordmark logo | ✅ Ready |
+| `public/omnimesh-mark.svg` | OminiMesh app/fav icon mark | ✅ Ready |
+| `src/components/Logo.tsx` | Reusable OminiMesh logo component | ✅ Ready |
+| `src/components/FeatureCard.tsx` | Landing page feature card | ✅ Ready |
+| `src/components/PricingCard.tsx` | Pricing card | ✅ Ready |
+| `src/components/WaitlistForm.tsx` | Waitlist form | ✅ Ready |
+| `src/components/CookieConsent.tsx` | Cookie consent | ✅ Ready |
+| `src/components/NewsletterForm.tsx` | Newsletter capture | ✅ Ready |
+| `src/components/ContactFormSkeleton.tsx` | Contact skeleton/loading | ✅ Ready |
+| `src/app/api/waitlist/route.ts` | Waitlist API | ✅ Ready |
+| `src/app/api/contact/route.ts` | Contact API | ✅ Ready |
+| `src/app/api/newsletter/route.ts` | Newsletter API | ✅ Ready |
 
 ## Current Focus
 
-The template is ready. Next steps depend on user requirements:
-
-1. What type of application to build
-2. What features are needed
-3. Design/branding preferences
+1. Validate user-facing content accuracy, tone, and claims
+2. Harden security and performance
+3. Prepare for data persistence and real integrations
 
 ## Quick Start Guide
 
 ### To add a new page:
-
 Create a file at `src/app/[route]/page.tsx`:
 ```tsx
 export default function NewPage() {
@@ -79,7 +74,6 @@ export default function NewPage() {
 ```
 
 ### To add components:
-
 Create `src/components/` directory and add components:
 ```tsx
 // src/components/ui/Button.tsx
@@ -89,11 +83,9 @@ export function Button({ children }: { children: React.ReactNode }) {
 ```
 
 ### To add a database:
-
 Follow `.kilocode/recipes/add-database.md`
 
 ### To add API routes:
-
 Create `src/app/api/[route]/route.ts`:
 ```tsx
 import { NextResponse } from "next/server";
@@ -109,17 +101,9 @@ export async function GET() {
 |--------|------|----------|
 | Add Database | `.kilocode/recipes/add-database.md` | Data persistence with Drizzle + SQLite |
 
-## Pending Improvements
-
-- [ ] Add more recipes (auth, email, etc.)
-- [ ] Add example components
-- [ ] Add testing setup recipe
-- [ ] Unify brand name to "OminiMesh" across codebase, metadata, pages, API, footer, images, and memory bank docs
-- [ ] Improve logo legibility in dark theme by replacing low-contrast MESH text with gradient variant and adding subtle container ring/bg
-
 ## Session History
 
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
-| 2026-06-12 | Built OminiMesh Global MVP landing page with features, pricing, waitlist form, waitlist API prototype, reusable components, and updated metadata |
+| 2026-06-12 | Built OminiMesh marketing site, product pages, waitlist/contact/newsletter APIs, SEO, security hardening, and fixed blank preview regression |
