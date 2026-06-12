@@ -1,0 +1,53 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OmniMesh Global mark</title>
+  <desc id="desc">A glowing global mesh symbol representing Wi-Fi, fiber, satellites, AI routing, and worldwide connectivity.</desc>
+  <defs>
+    <linearGradient id="meshGradient" x1="72" y1="72" x2="440" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#29E8FF"/>
+      <stop offset="0.45" stop-color="#5B7CFF"/>
+      <stop offset="0.78" stop-color="#8A5CFF"/>
+      <stop offset="1" stop-color="#B7F46B"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 256) rotate(90) scale(240)">
+      <stop stop-color="#29E8FF" stop-opacity="0.38"/>
+      <stop offset="0.58" stop-color="#5B7CFF" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#5B7CFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="0" y="0" width="512" height="512" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.16 0 0 0 0 0.91 0 0 0 0 1 0 0 0 0.75 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="128" fill="#06111F"/>
+  <circle cx="256" cy="256" r="240" fill="url(#halo)"/>
+  <circle cx="256" cy="256" r="174" fill="none" stroke="url(#meshGradient)" stroke-width="3" stroke-opacity="0.22"/>
+  <g filter="url(#glow)">
+    <circle cx="256" cy="256" r="150" fill="none" stroke="url(#meshGradient)" stroke-width="4" stroke-opacity="0.34"/>
+    <ellipse cx="256" cy="256" rx="150" ry="65" transform="rotate(-22 256 256)" fill="none" stroke="url(#meshGradient)" stroke-width="5" stroke-opacity="0.78"/>
+    <ellipse cx="256" cy="256" rx="150" ry="65" transform="rotate(58 256 256)" fill="none" stroke="url(#meshGradient)" stroke-width="5" stroke-opacity="0.78"/>
+    <ellipse cx="256" cy="256" rx="65" ry="150" transform="rotate(22 256 256)" fill="none" stroke="url(#meshGradient)" stroke-width="4" stroke-opacity="0.48"/>
+  </g>
+
+  <g>
+    <path d="M256 78C256 78 304 140 304 198C304 262 263 291 211 316C168 337 138 361 129 405" stroke="url(#meshGradient)" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 14" stroke-opacity="0.86"/>
+    <path d="M256 434C256 434 302 378 302 322C302 258 261 229 209 204C166 183 136 159 128 115" stroke="url(#meshGradient)" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 14" stroke-opacity="0.58"/>
+    <path d="M112 256C174 256 231 256 256 256C338 256 383 213 418 154" stroke="url(#meshGradient)" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 14" stroke-opacity="0.52"/>
+    <path d="M400 256C338 256 281 256 256 256C174 256 129 299 94 358" stroke="url(#meshGradient)" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 14" stroke-opacity="0.52"/>
+  </g>
+
+  <g>
+    <circle cx="256" cy="256" r="26" fill="#E0FBFF"/>
+    <circle cx="256" cy="256" r="42" fill="none" stroke="#29E8FF" stroke-opacity="0.38" stroke-width="3"/>
+    <circle cx="142" cy="174" r="14" fill="#B7F46B"/>
+    <circle cx="370" cy="167" r="12" fill="#29E8FF"/>
+    <circle cx="391" cy="336" r="14" fill="#8A5CFF"/>
+    <circle cx="138" cy="338" r="12" fill="#66E6FF"/>
+    <circle cx="256" cy="102" r="10" fill="#E0FBFF"/>
+    <circle cx="256" cy="412" r="10" fill="#B7F46B"/>
+  </g>
+</svg>

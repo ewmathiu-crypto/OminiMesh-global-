@@ -1,0 +1,80 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">OmniMesh Global logo</title>
+  <desc id="desc">A premium global connectivity logo with an AI-powered mesh globe mark and OmniMesh Global wordmark.</desc>
+  <defs>
+    <linearGradient id="omniText" x1="260" y1="70" x2="1080" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0FBFF"/>
+      <stop offset="0.45" stop-color="#66E6FF"/>
+      <stop offset="0.78" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#B7F46B"/>
+    </linearGradient>
+    <linearGradient id="orbital" x1="42" y1="42" x2="218" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#29E8FF"/>
+      <stop offset="0.45" stop-color="#5B7CFF"/>
+      <stop offset="1" stop-color="#B7F46B"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(130 130) rotate(90) scale(112)">
+      <stop stop-color="#28E8FF" stop-opacity="0.42"/>
+      <stop offset="0.55" stop-color="#7C5CFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#7C5CFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-40" y="-40" width="300" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.16 0 0 0 0 0.91 0 0 0 0 1 0 0 0 0.75 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="130" cy="130" r="112" fill="url(#coreGlow)"/>
+  <g filter="url(#glow)">
+    <circle cx="130" cy="130" r="88" stroke="url(#orbital)" stroke-width="3" stroke-opacity="0.32"/>
+    <ellipse cx="130" cy="130" rx="88" ry="38" transform="rotate(-22 130 130)" stroke="url(#orbital)" stroke-width="3.5" stroke-opacity="0.72"/>
+    <ellipse cx="130" cy="130" rx="88" ry="38" transform="rotate(58 130 130)" stroke="url(#orbital)" stroke-width="3.5" stroke-opacity="0.72"/>
+    <ellipse cx="130" cy="130" rx="38" ry="88" transform="rotate(22 130 130)" stroke="url(#orbital)" stroke-width="3.5" stroke-opacity="0.48"/>
+  </g>
+
+  <g>
+    <path d="M130 46C130 46 158 82 158 116C158 153 134 170 104 184C79 196 61 210 55 236" stroke="url(#orbital)" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 9" stroke-opacity="0.85"/>
+    <path d="M130 214C130 214 157 181 157 148C157 111 133 94 103 80C78 68 60 53 55 28" stroke="url(#orbital)" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 9" stroke-opacity="0.55"/>
+    <path d="M48 130C84 130 117 130 130 130C178 130 204 105 224 78" stroke="url(#orbital)" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 9" stroke-opacity="0.5"/>
+    <path d="M212 130C176 130 143 130 130 130C82 130 56 155 36 182" stroke="url(#orbital)" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 9" stroke-opacity="0.5"/>
+  </g>
+
+  <g>
+    <circle cx="130" cy="130" r="15" fill="#E0FBFF"/>
+    <circle cx="130" cy="130" r="24" stroke="#29E8FF" stroke-opacity="0.38" stroke-width="2"/>
+    <circle cx="64" cy="82" r="8" fill="#B7F46B"/>
+    <circle cx="198" cy="78" r="7" fill="#29E8FF"/>
+    <circle cx="210" cy="176" r="8" fill="#7C5CFF"/>
+    <circle cx="62" cy="178" r="7" fill="#66E6FF"/>
+    <circle cx="130" cy="38" r="6" fill="#E0FBFF"/>
+    <circle cx="130" cy="224" r="6" fill="#B7F46B"/>
+  </g>
+
+  <g>
+    <path d="M282 139C291 118 311 106 339 106C377 106 400 131 400 171C400 212 376 238 338 238C310 238 290 225 282 203" fill="none" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M326 171H389" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M432 109V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M462 235V109L500 235V109" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M532 109H575C599 109 616 125 616 147C616 166 602 180 583 182L532 188V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M532 188H581C606 188 625 205 625 230" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M658 109V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M692 109V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M728 235V109L766 235V109" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M800 109H843C867 109 884 125 884 147C884 166 870 180 851 182L800 188V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M800 188H849C874 188 893 205 893 230" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M926 109V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M958 109V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M990 109H1034C1058 109 1075 125 1075 147C1075 166 1061 180 1042 182L990 188V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M990 188H1039C1064 188 1083 205 1083 230" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M1116 109V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M1116 109H1158C1182 109 1199 125 1199 147C1199 166 1185 180 1166 182L1116 188V235" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1116 188H1165C1190 188 1209 205 1209 230" stroke="url(#omniText)" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <text x="282" y="288" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="30" font-weight="700" letter-spacing="5.4" fill="#8FEFFF">GLOBAL</text>
+  <text x="286" y="318" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="600" letter-spacing="4.2" fill="#8FA7B8">ONE INTERNET FOR THE PLANET</text>
+</svg>
