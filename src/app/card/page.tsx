@@ -47,12 +47,7 @@ export default function CardPage() {
             </ul>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/contact" className="rounded-full border border-cyan-300/30 bg-white/5 px-5 py-2.5 text-sm font-bold text-cyan-100 transition hover:border-cyan-300/60 hover:bg-cyan-300/10">Register for Virtual Card</Link>
-              <a
-          href="/#join"
-          className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-bold text-white transition hover:border-cyan-300/60 hover:bg-cyan-300/10"
-        >
-          Join Waitlist
-        </a>
+              <Link href="/#join" className="rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-bold text-white transition hover:border-cyan-300/60 hover:bg-cyan-300/10">Join Waitlist</Link>
             </div>
           </div>
 
