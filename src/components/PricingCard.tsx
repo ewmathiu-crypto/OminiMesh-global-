@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type PricingCardProps = {
   name: string;
   price: string;
@@ -13,6 +15,10 @@ export function PricingCard({
   features,
   highlighted = false,
 }: PricingCardProps) {
+  const buttonClass = highlighted
+    ? "bg-cyan-300 text-slate-950 hover:bg-cyan-200"
+    : "bg-white text-slate-950 hover:bg-cyan-100";
+
   return (
     <div
       className={`relative flex flex-col rounded-3xl p-6 ${
@@ -42,16 +48,12 @@ export function PricingCard({
           </li>
         ))}
       </ul>
-      <button
-        className={`mt-8 rounded-2xl px-5 py-3 text-sm font-bold transition ${
-          highlighted
-            ? "bg-cyan-300 text-slate-950 hover:bg-cyan-200"
-            : "bg-white text-slate-950 hover:bg-cyan-100"
-        }`}
-        type="button"
+      <Link
+        href="/#join"
+        className={`mt-8 inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-bold transition ${buttonClass}`}
       >
         Join waitlist
-      </button>
+      </Link>
     </div>
   );
 }
