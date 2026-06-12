@@ -35,7 +35,7 @@ const features = [
     icon: "💳",
     title: "Payments and wallet",
     description:
-      "Support subscriptions, daily passes, top-ups, refunds, business billing, and future virtual Visa wallet functionality.",
+      "Subscriptions, daily passes, top-ups, refunds, business billing, and the OminiMesh Virtual Visa wallet for global spending.",
   },
   {
     icon: "🛡️",
