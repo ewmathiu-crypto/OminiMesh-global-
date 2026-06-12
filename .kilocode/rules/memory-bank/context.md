@@ -33,6 +33,15 @@ Building the OminiMesh marketing site and product pages on Next.js 16 + Tailwind
 - [x] Security headers in `next.config.ts` (X-Frame-Options, CSP-ready, Referrer-Policy, Permissions-Policy)
 - [x] API rate limiting and validation for `/api/waitlist` and new `/api/contact`
 - [x] Contact page UX improved (API-backed form, loading/error/success states)
+- [x] `/sitemap.xml` and `/robots.txt` for SEO
+- [x] PWA manifest (`/manifest.webmanifest`) and favicon
+- [x] Global 404 page (`/not-found.tsx`)
+- [x] Security headers in `next.config.ts` (X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Referrer-Policy, Permissions-Policy)
+- [x] API rate limiting and validation for `/api/waitlist`, `/api/contact`, and new `/api/newsletter`
+- [x] JSON-LD structured data for Organization and WebSite
+- [x] Cookie consent banner client component
+- [x] Newsletter capture component and API
+- [x] Contact form skeleton/loading state component
 
 ## Current Structure
 
