@@ -1,10 +1,10 @@
-# Active Context: Next.js Starter Template
+# Active Context: OminiMesh Website
 
 ## Current State
 
-**Template Status**: ✅ Ready for development
+**Project Status**: ✅ Active development
 
-The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. It's ready for AI-assisted expansion to build any type of application.
+Building the OminiMesh marketing site and product pages on Next.js 16 + Tailwind CSS 4.
 
 ## Recently Completed
 
@@ -14,12 +14,19 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] ESLint configuration
 - [x] Memory bank documentation
 - [x] Recipe system for common features
-- [x] OminiMesh Global MVP landing page, reusable components, waitlist form, and waitlist API prototype
-- [x] Site-wide navigation and footer
+- [x] OminiMesh MVP landing page, reusable components, waitlist form, and waitlist API prototype
+- [x] Site-wide navigation and footer (`SiteHeader`, `SiteFooter`)
 - [x] Dark theme contrast and viewing optimizations
 - [x] Free plan added to pricing table (4-column responsive grid)
 - [x] Terms of Service page added
-- [x] Legal and policy page updates
+- [x] Legal and policy pages
+- [x] Brand unified to "OminiMesh" across codebase
+- [x] Logo legibility improved for dark theme
+- [x] `/partners` page for grant/investor outreach
+- [x] `/products` page with branded Mi-Fi and routers including budget options under $30
+- [x] `/card` page for Virtual/Physical Visa card
+- [x] `/sim` page for Virtual/eSIM and Physical SIM kit
+- [x] Full link/button audit: pricing cards, waitlist anchors, and cross-page CTAs
 
 ## Current Structure
 
