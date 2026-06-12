@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FeatureCard } from "@/components/FeatureCard";
-import { Logo } from "@/components/Logo";
 import { PricingCard } from "@/components/PricingCard";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import { WaitlistForm } from "@/components/WaitlistForm";
 
 const features = [
@@ -45,6 +45,18 @@ const features = [
 ];
 
 const plans = [
+  {
+    name: "Free",
+    price: "$0",
+    description:
+      "Get started with basic smart Wi-Fi discovery and limited community hotspot access.",
+    features: [
+      "Basic Wi-Fi hotspot discovery",
+      "Community hotspot access",
+      "Waitlist access",
+      "Community support",
+    ],
+  },
   {
     name: "Global Basic",
     price: "$9.99",
@@ -93,24 +105,7 @@ export default function Home() {
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_10%,rgba(41,232,255,0.18),transparent_32%),radial-gradient(circle_at_80%_0%,rgba(124,92,255,0.16),transparent_30%),radial-gradient(circle_at_50%_100%,rgba(183,244,107,0.08),transparent_32%)]" />
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:64px_64px] opacity-60" />
 
-      <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-        <Logo className="w-40 sm:w-52" />
-        <nav className="hidden items-center gap-6 md:flex">
-          <Link href="/" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Home</Link>
-          <Link href="/about" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">About</Link>
-          <Link href="/legal" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Legal</Link>
-          <Link href="/privacy-policy" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Privacy Policy</Link>
-          <Link href="/contact" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Contact</Link>
-          <Link href="/kenya" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Kenya</Link>
-          <Link href="/faq" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">FAQ</Link>
-        </nav>
-        <a
-          href="#join"
-          className="rounded-full border border-cyan-300/30 bg-white/5 px-5 py-2.5 text-sm font-bold text-cyan-100 transition hover:border-cyan-300/60 hover:bg-cyan-300/10"
-        >
-          Join waitlist
-        </a>
-      </header>
+      <SiteHeader />
 
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:pt-16">
         <div>
@@ -265,7 +260,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {plans.map((plan) => (
             <PricingCard key={plan.name} {...plan} />
           ))}
@@ -292,18 +287,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="mx-auto flex max-w-7xl flex-col justify-between gap-6 border-t border-white/10 px-6 py-8 text-sm text-slate-500 sm:flex-row">
-        <div>© 2026 OminiMesh Global. All rights reserved.</div>
-        <div className="flex flex-wrap gap-x-6 gap-y-2">
-          <Link href="/" className="transition hover:text-cyan-300">Home</Link>
-          <Link href="/about" className="transition hover:text-cyan-300">About</Link>
-          <Link href="/legal" className="transition hover:text-cyan-300">Legal</Link>
-          <Link href="/privacy-policy" className="transition hover:text-cyan-300">Privacy Policy</Link>
-          <Link href="/contact" className="transition hover:text-cyan-300">Contact</Link>
-          <Link href="/kenya" className="transition hover:text-cyan-300">Kenya</Link>
-          <Link href="/faq" className="transition hover:text-cyan-300">FAQ</Link>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

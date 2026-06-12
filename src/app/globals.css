@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  --color-cyan-300: #49e6ff;
+  --color-cyan-50: #e6fbff;
+  --color-cyan-100: #c5f7ff;
+  --color-cyan-950: #041f25;
+  --color-emerald-300: #34d399;
+  --font-geist-sans: var(--font-geist-sans);
+  --font-geist-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #49e6ff44;
+  color: #ffffff;
+}
+
+body {
+  min-height: 100vh;
+  text-wrap: pretty;
+}
+
+input,
+textarea,
+select {
+  color-scheme: dark;
+}

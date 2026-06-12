@@ -15,6 +15,11 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] Memory bank documentation
 - [x] Recipe system for common features
 - [x] OminiMesh Global MVP landing page, reusable components, waitlist form, and waitlist API prototype
+- [x] Site-wide navigation and footer
+- [x] Dark theme contrast and viewing optimizations
+- [x] Free plan added to pricing table (4-column responsive grid)
+- [x] Terms of Service page added
+- [x] Legal and policy page updates
 
 ## Current Structure
 
