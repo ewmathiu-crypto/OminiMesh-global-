@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Logo } from "@/components/Logo";
 import { PricingCard } from "@/components/PricingCard";
@@ -94,6 +95,15 @@ export default function Home() {
 
       <header className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <Logo className="w-40 sm:w-52" />
+        <nav className="hidden items-center gap-6 md:flex">
+          <Link href="/" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Home</Link>
+          <Link href="/about" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">About</Link>
+          <Link href="/legal" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Legal</Link>
+          <Link href="/privacy-policy" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Privacy Policy</Link>
+          <Link href="/contact" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Contact</Link>
+          <Link href="/kenya" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Kenya</Link>
+          <Link href="/faq" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">FAQ</Link>
+        </nav>
         <a
           href="#join"
           className="rounded-full border border-cyan-300/30 bg-white/5 px-5 py-2.5 text-sm font-bold text-cyan-100 transition hover:border-cyan-300/60 hover:bg-cyan-300/10"
@@ -282,13 +292,16 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="mx-auto flex max-w-7xl flex-col justify-between gap-4 border-t border-white/10 px-6 py-8 text-sm text-slate-500 sm:flex-row">
+      <footer className="mx-auto flex max-w-7xl flex-col justify-between gap-6 border-t border-white/10 px-6 py-8 text-sm text-slate-500 sm:flex-row">
         <div>© 2026 OminiMesh Global. All rights reserved.</div>
-        <div className="flex gap-5">
-          <span>Wi-Fi</span>
-          <span>eSIM</span>
-          <span>AI Routing</span>
-          <span>Global Payments</span>
+        <div className="flex flex-wrap gap-x-6 gap-y-2">
+          <Link href="/" className="transition hover:text-cyan-300">Home</Link>
+          <Link href="/about" className="transition hover:text-cyan-300">About</Link>
+          <Link href="/legal" className="transition hover:text-cyan-300">Legal</Link>
+          <Link href="/privacy-policy" className="transition hover:text-cyan-300">Privacy Policy</Link>
+          <Link href="/contact" className="transition hover:text-cyan-300">Contact</Link>
+          <Link href="/kenya" className="transition hover:text-cyan-300">Kenya</Link>
+          <Link href="/faq" className="transition hover:text-cyan-300">FAQ</Link>
         </div>
       </footer>
     </main>
