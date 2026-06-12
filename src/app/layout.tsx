@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "OminiMesh Global",
+  description:
+    "OminiMesh Global is an AI-powered global connectivity platform unifying Wi-Fi, fiber, towers, satellites, eSIM, payments, and intelligent routing.",
 };
 
 export default function RootLayout({

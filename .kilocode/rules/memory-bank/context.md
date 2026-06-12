@@ -14,7 +14,7 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] ESLint configuration
 - [x] Memory bank documentation
 - [x] Recipe system for common features
-- [x] OminiMesh Global logo assets and homepage integration
+- [x] OminiMesh Global MVP landing page, reusable components, waitlist form, and waitlist API prototype
 
 ## Current Structure
 
@@ -23,8 +23,13 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 | `src/app/page.tsx` | Home page | ✅ Ready |
 | `src/app/layout.tsx` | Root layout | ✅ Ready |
 | `src/app/globals.css` | Global styles | ✅ Ready |
-| `public/omnimesh-logo.svg` | OminiMesh Global wordmark logo | ✅ Added |
+| `public/omnimesh-logo.svg` | OminiMesh Global two-tone wordmark logo | ✅ Added |
 | `public/omnimesh-mark.svg` | OminiMesh Global app/fav icon mark | ✅ Added |
+| `src/components/Logo.tsx` | Reusable OminiMesh Global logo component | ✅ Added |
+| `src/components/FeatureCard.tsx` | Landing page feature card component | ✅ Added |
+| `src/components/PricingCard.tsx` | Landing page pricing card component | ✅ Added |
+| `src/components/WaitlistForm.tsx` | Client-side waitlist form component | ✅ Added |
+| `src/app/api/waitlist/route.ts` | Prototype waitlist API route | ✅ Added |
 | `.kilocode/` | AI context & recipes | ✅ Ready |
 
 ## Current Focus
@@ -88,4 +93,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
-| 2026-06-12 | Updated brand identity to OminiMesh Global, refreshed two-tone SVG wordmark, homepage branding, and memory bank context |
+| 2026-06-12 | Built OminiMesh Global MVP landing page with features, pricing, waitlist form, waitlist API prototype, reusable components, and updated metadata |
