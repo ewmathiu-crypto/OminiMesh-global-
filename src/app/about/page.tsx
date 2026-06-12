@@ -31,12 +31,12 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="mt-10">
-          <Link
+          <a
             href="/#join"
             className="inline-flex rounded-2xl bg-cyan-300 px-6 py-4 text-sm font-black uppercase tracking-[0.22em] text-slate-950 transition hover:bg-cyan-200"
           >
             Join the waitlist
-          </Link>
+          </a>
         </div>
       </section>
 
