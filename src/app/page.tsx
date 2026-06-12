@@ -8,9 +8,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(circle,black,transparent_78%)]" />
 
         <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center text-center">
+          <h1 className="sr-only">OminiMesh Global</h1>
           <Image
             src="/omnimesh-logo.svg"
-            alt="OmniMesh Global logo"
+            alt="OminiMesh Global logo"
             width={1200}
             height={360}
             priority
@@ -25,12 +26,13 @@ export default function Home() {
               width={32}
               height={32}
             />
-            GLOBAL AI NETWORK
+            OMINIMESH GLOBAL AI NETWORK
           </div>
 
           <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300">
-            One internet for the planet. Wi-Fi, fiber, towers, satellites, eSIM,
-            payments, and AI routing unified into one global connectivity brand.
+            One internet for the planet. OminiMesh Global unifies Wi-Fi, fiber,
+            towers, satellites, eSIM, payments, and AI routing into one global
+            connectivity brand.
           </p>
         </div>
       </section>

@@ -14,7 +14,7 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] ESLint configuration
 - [x] Memory bank documentation
 - [x] Recipe system for common features
-- [x] OmniMesh Global logo assets and homepage integration
+- [x] OminiMesh Global logo assets and homepage integration
 
 ## Current Structure
 
@@ -23,8 +23,8 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 | `src/app/page.tsx` | Home page | ✅ Ready |
 | `src/app/layout.tsx` | Root layout | ✅ Ready |
 | `src/app/globals.css` | Global styles | ✅ Ready |
-| `public/omnimesh-logo.svg` | OmniMesh Global wordmark logo | ✅ Added |
-| `public/omnimesh-mark.svg` | OmniMesh Global app/fav icon mark | ✅ Added |
+| `public/omnimesh-logo.svg` | OminiMesh Global wordmark logo | ✅ Added |
+| `public/omnimesh-mark.svg` | OminiMesh Global app/fav icon mark | ✅ Added |
 | `.kilocode/` | AI context & recipes | ✅ Ready |
 
 ## Current Focus
@@ -88,4 +88,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
-| 2026-06-12 | Added OmniMesh Global SVG wordmark, SVG mark, and homepage logo showcase |
+| 2026-06-12 | Updated brand identity to OminiMesh Global, refreshed SVG wordmark, homepage branding, and memory bank context |
