@@ -20,10 +20,10 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <linearGradient id="wordmark" x1="260" y1="70" x2="1080" y2="280" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#E0FBFF"/>
-      <stop offset="0.45" stop-color="#66E6FF"/>
-      <stop offset="0.78" stop-color="#7C5CFF"/>
+    <linearGradient id="wordmark" x1="240" y1="140" x2="1080" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.35" stop-color="#29E8FF"/>
+      <stop offset="0.75" stop-color="#5B7CFF"/>
       <stop offset="1" stop-color="#B7F46B"/>
     </linearGradient>
   </defs>
