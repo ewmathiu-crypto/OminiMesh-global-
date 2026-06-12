@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FeatureCard } from "@/components/FeatureCard";
 import { PricingCard } from "@/components/PricingCard";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -131,12 +132,12 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#join"
+            <Link
+              href="/#join"
               className="rounded-2xl bg-cyan-300 px-6 py-4 text-sm font-black uppercase tracking-[0.22em] text-slate-950 transition hover:bg-cyan-200"
             >
               Join the waitlist
-            </a>
+            </Link>
             <a
               href="#plans"
               className="rounded-2xl border border-white/10 bg-white/5 px-6 py-4 text-center text-sm font-black uppercase tracking-[0.22em] text-white transition hover:border-cyan-300/40 hover:bg-white/10"

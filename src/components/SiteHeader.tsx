@@ -19,12 +19,12 @@ export function SiteHeader() {
         <Link href="/kenya" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Kenya</Link>
         <Link href="/faq" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">FAQ</Link>
       </nav>
-      <a
-        href="#join"
+      <Link
+        href="/#join"
         className="rounded-full border border-cyan-300/30 bg-white/5 px-5 py-2.5 text-sm font-bold text-cyan-100 transition hover:border-cyan-300/60 hover:bg-cyan-300/10"
       >
         Join waitlist
-      </a>
+      </Link>
     </header>
   );
 }
