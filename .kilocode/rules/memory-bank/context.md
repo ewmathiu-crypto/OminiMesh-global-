@@ -27,6 +27,12 @@ Building the OminiMesh marketing site and product pages on Next.js 16 + Tailwind
 - [x] `/card` page for Virtual/Physical Visa card
 - [x] `/sim` page for Virtual/eSIM and Physical SIM kit
 - [x] Full link/button audit: pricing cards, waitlist anchors, and cross-page CTAs
+- [x] `/sitemap.xml` and `/robots.txt` for SEO
+- [x] PWA manifest for mobile install experience
+- [x] Global 404 page (`/not-found`)
+- [x] Security headers in `next.config.ts` (X-Frame-Options, CSP-ready, Referrer-Policy, Permissions-Policy)
+- [x] API rate limiting and validation for `/api/waitlist` and new `/api/contact`
+- [x] Contact page UX improved (API-backed form, loading/error/success states)
 
 ## Current Structure
 
