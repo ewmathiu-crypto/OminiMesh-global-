@@ -64,7 +64,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json(
       {
-        message: "Welcome to OminiMesh Global. You are on the waitlist.",
+        message: "Welcome to OminiMesh. You are on the waitlist.",
       },
       { status: 201 },
     );

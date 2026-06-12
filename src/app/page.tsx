@@ -125,7 +125,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            OminiMesh Global unifies Wi-Fi, fiber, towers, satellites, eSIM,
+            OminiMesh unifies Wi-Fi, fiber, towers, satellites, eSIM,
             payments, and AI routing into one affordable connectivity platform
             for travelers, businesses, partners, and future global users.
           </p>

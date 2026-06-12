@@ -4,8 +4,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 const faqs = [
   {
-    q: "What is OminiMesh Global?",
-    a: "OminiMesh Global is an AI-powered connectivity platform that unifies Wi-Fi, fiber, towers, satellites, eSIM, payments, and intelligent routing. It helps travelers, businesses, and partners access reliable internet across 240+ target countries.",
+    q: "What is OminiMesh?",
+    a: "OminiMesh is an AI-powered connectivity platform that unifies Wi-Fi, fiber, towers, satellites, eSIM, payments, and intelligent routing. It helps travelers, businesses, and partners access reliable internet across 240+ target countries.",
   },
   {
     q: "How does the AI routing work?",
@@ -44,7 +44,7 @@ export default function FAQPage() {
       <section className="mx-auto max-w-4xl px-6 py-20">
         <div className="text-sm font-black uppercase tracking-[0.35em] text-cyan-300">FAQ</div>
         <h1 className="mt-4 text-5xl font-black tracking-[-0.04em] text-white sm:text-6xl">Frequently asked questions</h1>
-        <p className="mt-6 text-lg leading-8 text-slate-300">Quick answers to common questions about OminiMesh Global.</p>
+        <p className="mt-6 text-lg leading-8 text-slate-300">Quick answers to common questions about OminiMesh.</p>
 
         <div className="mt-12 space-y-5">
           {faqs.map((item) => (

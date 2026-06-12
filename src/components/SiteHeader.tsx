@@ -5,7 +5,9 @@ export function SiteHeader() {
   return (
     <header className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-6">
       <Link href="/" className="inline-flex items-center">
-        <Logo className="w-40 sm:w-52" />
+        <span className="rounded-2xl bg-cyan-300/10 p-1.5 ring-1 ring-cyan-300/30">
+          <Logo className="w-40 sm:w-52" />
+        </span>
       </Link>
       <nav className="hidden items-center gap-6 md:flex">
         <Link href="/" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Home</Link>

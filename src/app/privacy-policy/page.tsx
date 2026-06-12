@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
         <div className="mt-10 space-y-8 text-sm leading-7 text-slate-300">
           <div>
             <h2 className="text-xl font-semibold text-white">Introduction</h2>
-            <p className="mt-3">OminiMesh Global respects your privacy. This policy explains what data we collect, why we collect it, how we use it, and your rights.</p>
+            <p className="mt-3">OminiMesh respects your privacy. This policy explains what data we collect, why we collect it, how we use it, and your rights.</p>
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white">Data We Collect</h2>

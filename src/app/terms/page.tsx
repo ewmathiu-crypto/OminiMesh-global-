@@ -18,7 +18,7 @@ export default function TermsPage() {
         <div className="mt-10 space-y-8 text-sm leading-7 text-slate-300">
           <div>
             <h2 className="text-xl font-semibold text-white">Agreement to Terms</h2>
-            <p className="mt-3">By accessing or using OminiMesh Global services, you agree to be bound by these Terms of Service. If you do not agree to all terms, do not use the platform.</p>
+            <p className="mt-3">By accessing or using OminiMesh services, you agree to be bound by these Terms of Service. If you do not agree to all terms, do not use the platform.</p>
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white">Use of Services</h2>
@@ -30,11 +30,11 @@ export default function TermsPage() {
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white">Intellectual Property</h2>
-            <p className="mt-3">All content, trademarks, and technology associated with OminiMesh Global remain our property. You may not copy, modify, or distribute our materials without permission.</p>
+            <p className="mt-3">All content, trademarks, and technology associated with OminiMesh remain our property. You may not copy, modify, or distribute our materials without permission.</p>
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white">Limitation of Liability</h2>
-            <p className="mt-3">To the maximum extent permitted by law, OminiMesh Global shall not be liable for indirect, incidental, special, consequential, or punitive damages resulting from your use of the service.</p>
+            <p className="mt-3">To the maximum extent permitted by law, OminiMesh shall not be liable for indirect, incidental, special, consequential, or punitive damages resulting from your use of the service.</p>
           </div>
           <div>
             <h2 className="text-xl font-semibold text-white">Changes & Termination</h2>

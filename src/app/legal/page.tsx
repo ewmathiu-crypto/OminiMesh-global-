@@ -14,7 +14,7 @@ export default function LegalPage() {
         <div className="text-sm font-black uppercase tracking-[0.35em] text-cyan-300">Legal</div>
         <h1 className="mt-4 text-5xl font-black tracking-[-0.04em] text-white sm:text-6xl">Legal information</h1>
         <p className="mt-6 text-lg leading-8 text-slate-300">
-          OminiMesh Global operates under applicable telecommunications, data protection, and consumer laws in the jurisdictions where we provide services. This page provides important legal resources and disclosures.
+          OminiMesh operates under applicable telecommunications, data protection, and consumer laws in the jurisdictions where we provide services. This page provides important legal resources and disclosures.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <Link href="/privacy-policy" className="block rounded-3xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-cyan-300/40">
@@ -27,7 +27,7 @@ export default function LegalPage() {
           </Link>
         </div>
         <p className="mt-10 text-sm leading-7 text-slate-400">
-          Disclaimer: This website and all content are provided for informational purposes only and do not constitute legal advice. OminiMesh Global may update these terms and policies from time to time. Please review regularly.
+          Disclaimer: This website and all content are provided for informational purposes only and do not constitute legal advice. OminiMesh may update these terms and policies from time to time. Please review regularly.
         </p>
       </section>
 

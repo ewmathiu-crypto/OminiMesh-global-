@@ -5,7 +5,9 @@ export function SiteFooter() {
   return (
     <footer className="mx-auto flex max-w-7xl flex-col justify-between gap-6 border-t border-white/10 px-6 py-8 text-sm text-slate-500 sm:flex-row">
       <Link href="/" className="inline-flex w-fit">
-        <Logo className="w-32 sm:w-40" />
+        <span className="rounded-2xl bg-cyan-300/10 p-1.5 ring-1 ring-cyan-300/30">
+          <Logo className="w-32 sm:w-40" />
+        </span>
       </Link>
       <div className="flex flex-wrap gap-x-6 gap-y-2">
         <Link href="/" className="transition hover:text-cyan-300">Home</Link>
@@ -17,7 +19,7 @@ export function SiteFooter() {
         <Link href="/kenya" className="transition hover:text-cyan-300">Kenya</Link>
         <Link href="/faq" className="transition hover:text-cyan-300">FAQ</Link>
       </div>
-      <div className="text-xs text-slate-600">© 2026 OminiMesh Global. All rights reserved.</div>
+      <div className="text-xs text-slate-600">© 2026 OminiMesh. All rights reserved.</div>
     </footer>
   );
 }

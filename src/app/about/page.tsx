@@ -15,7 +15,7 @@ export default function AboutPage() {
         <div className="text-sm font-black uppercase tracking-[0.35em] text-cyan-300">About</div>
         <h1 className="mt-4 text-5xl font-black tracking-[-0.04em] text-white sm:text-6xl">Building the future of global connectivity.</h1>
         <p className="mt-6 text-lg leading-8 text-slate-300">
-          OminiMesh Global was founded to solve one of humanity&apos;s most persistent problems: reliable, affordable internet access everywhere. Our team combines decades of experience in telecommunications, AI, and infrastructure to create a single intelligent platform that unifies Wi-Fi, fiber, towers, satellites, eSIM, payments, and routing.
+          OminiMesh was founded to solve one of humanity&apos;s most persistent problems: reliable, affordable internet access everywhere. Our team combines decades of experience in telecommunications, AI, and infrastructure to create a single intelligent platform that unifies Wi-Fi, fiber, towers, satellites, eSIM, payments, and routing.
         </p>
         <p className="mt-5 text-lg leading-8 text-slate-300">
           We believe everyone deserves access to fast, secure, and affordable internet — whether you&apos;re traveling, working remotely, or building a business in an emerging market. That&apos;s why we&apos;re building OminiMesh as an open, partner-first ecosystem.

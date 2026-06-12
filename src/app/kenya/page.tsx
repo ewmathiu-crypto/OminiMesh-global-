@@ -13,7 +13,7 @@ export default function KenyaPage() {
       <section className="mx-auto max-w-5xl px-6 py-20">
         <div className="text-sm font-black uppercase tracking-[0.35em] text-cyan-300">Kenya</div>
         <h1 className="mt-4 text-5xl font-black tracking-[-0.04em] text-white sm:text-6xl">Connecting Kenya</h1>
-        <p className="mt-6 text-lg leading-8 text-slate-300">OminiMesh Global is building infrastructure and partnerships to expand affordable, high-quality connectivity across Kenya — with a focus on urban, peri-urban, and rural communities.</p>
+        <p className="mt-6 text-lg leading-8 text-slate-300">OminiMesh is building infrastructure and partnerships to expand affordable, high-quality connectivity across Kenya — with a focus on urban, peri-urban, and rural communities.</p>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
