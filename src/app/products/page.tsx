@@ -4,6 +4,20 @@ import { SiteHeader } from "@/components/SiteHeader";
 
 const products = [
   {
+    name: "OminiMesh Lite",
+    type: "Budget Mi-Fi",
+    price: "$29",
+    description: "Ultra-affordable portable hotspot with zero signal drop and zero coverage gap technology.",
+    features: ["Zero-drop signal lock", "Zero-coverage error correction", "4G LTE", "Up to 5 devices", "10hr battery"],
+  },
+  {
+    name: "OminiMesh Air",
+    type: "Budget Router",
+    price: "$25",
+    description: "Cheapest home router with AI stabilization for zero packet loss and zero dead zones.",
+    features: ["AI dead-zone elimination", "Zero-error retransmission", "Dual-band Wi-Fi", "Parental controls", "Easy setup"],
+  },
+  {
     name: "OminiMesh Go",
     type: "Portable Mi-Fi",
     price: "$79",
