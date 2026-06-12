@@ -92,6 +92,8 @@ export async function GET() {
 - [ ] Add more recipes (auth, email, etc.)
 - [ ] Add example components
 - [ ] Add testing setup recipe
+- [ ] Unify brand name to "OminiMesh" across codebase, metadata, pages, API, footer, images, and memory bank docs
+- [ ] Improve logo legibility in dark theme by replacing low-contrast MESH text with gradient variant and adding subtle container ring/bg
 
 ## Session History
 
