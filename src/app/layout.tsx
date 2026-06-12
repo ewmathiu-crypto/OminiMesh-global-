@@ -14,40 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "OminiMesh | One intelligent internet for the planet.",
-    template: "%s | OminiMesh",
-  },
+  title: { default: "OminiMesh", template: "%s | OminiMesh" },
   description:
-    "OminiMesh unifies Wi-Fi, fiber, towers, satellites, eSIM, payments, and AI routing into one affordable, global connectivity platform for travelers, businesses, and partners.",
-  keywords: ["OminiMesh", "global internet", "AI routing", "eSIM", "Mi-Fi", "Wi-Fi", "connectivity", "telecom"],
-  authors: [{ name: "OminiMesh" }],
-  openGraph: {
-    title: "OminiMesh | One intelligent internet for the planet.",
-    description: "AI-powered connectivity across Wi-Fi, fiber, towers, satellites, eSIM, payments, and routing.",
-    type: "website",
-    locale: "en_US",
-    siteName: "OminiMesh",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "OminiMesh | One intelligent internet for the planet.",
-    description: "AI-powered global connectivity platform.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-      "max-snippet": -1,
-    },
-  },
-  alternates: {
-    canonical: "/",
-  },
+    "OminiMesh unifies Wi-Fi, fiber, towers, satellites, eSIM, payments, and AI routing into one affordable global connectivity platform for travelers, businesses, and partners.",
+  openGraph: { title: "OminiMesh", description: "AI-powered global connectivity platform.", type: "website" },
 };
 
 export default function RootLayout({
@@ -57,12 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="manifest" href="/manifest.webmanifest" />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <StructuredData />
         {children}
       </body>
