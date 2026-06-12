@@ -13,6 +13,7 @@ export function SiteHeader() {
         <Link href="/" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Home</Link>
         <Link href="/about" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">About</Link>
         <Link href="/partners" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Partners</Link>
+        <Link href="/products" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Products</Link>
         <Link href="/legal" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Legal</Link>
         <Link href="/terms" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Terms</Link>
         <Link href="/privacy-policy" className="text-sm font-medium text-slate-300 transition hover:text-cyan-300">Privacy Policy</Link>

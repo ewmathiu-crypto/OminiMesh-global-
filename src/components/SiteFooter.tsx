@@ -13,6 +13,7 @@ export function SiteFooter() {
         <Link href="/" className="transition hover:text-cyan-300">Home</Link>
         <Link href="/about" className="transition hover:text-cyan-300">About</Link>
         <Link href="/partners" className="transition hover:text-cyan-300">Partners</Link>
+        <Link href="/products" className="transition hover:text-cyan-300">Products</Link>
         <Link href="/legal" className="transition hover:text-cyan-300">Legal</Link>
         <Link href="/terms" className="transition hover:text-cyan-300">Terms</Link>
         <Link href="/privacy-policy" className="transition hover:text-cyan-300">Privacy Policy</Link>
