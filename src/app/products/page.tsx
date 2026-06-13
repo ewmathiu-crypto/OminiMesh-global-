@@ -2,6 +2,38 @@ import Link from "next/link";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 
+const dataPlans = [
+  {
+    name: "Free",
+    type: "Trial",
+    price: "KSH 0",
+    description: "Test OminiMesh with limited free access. No purchase needed.",
+    features: ["Basic Wi-Fi discovery", "Limited hotspot access", "Waitlist priority", "Community support"],
+  },
+  {
+    name: "2 Hour Pass",
+    type: "Hourly",
+    price: "KSH 10",
+    description: "Quick 2-hour connectivity for urgent needs or short sessions.",
+    features: ["2 hours of access", "AI-assisted network selection", "Auto-connect support", "Fair-use routing"],
+  },
+  {
+    name: "12 Hour Pass",
+    type: "Hourly",
+    price: "KSH 30",
+    description: "Half-day connectivity for work, travel, or study sessions.",
+    features: ["12 hours of access", "Priority routing", "Speed and latency history", "Wallet top-up ready"],
+    highlighted: true,
+  },
+  {
+    name: "24 Hour Pass",
+    type: "Hourly",
+    price: "KSH 50",
+    description: "Full-day connectivity at the best value for daily users.",
+    features: ["24 hours of access", "Priority routing", "Multi-country roaming", "SLA-ready reliability"],
+  },
+];
+
 const products = [
   {
     name: "OminiMesh Lite",
@@ -55,6 +87,41 @@ export default function ProductsPage() {
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:64px_64px] opacity-60" />
 
       <SiteHeader />
+
+      <section className="mx-auto max-w-7xl px-6 py-20">
+        <div className="text-sm font-black uppercase tracking-[0.35em] text-cyan-300">Data Plans</div>
+        <h1 className="mt-4 text-5xl font-black tracking-[-0.04em] text-white sm:text-6xl">Hourly Plans</h1>
+        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">Pay by the hour. Start with the free trial or choose a pass that fits your session.</p>
+
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {dataPlans.map((plan) => (
+            <div
+              key={plan.name}
+              className={
+                plan.highlighted
+                  ? "rounded-3xl border border-cyan-300/40 bg-cyan-300/10 p-6 shadow-2xl shadow-cyan-500/20"
+                  : "rounded-3xl border border-white/10 bg-white/[0.04] p-6"
+              }
+            >
+              <div className="text-xs font-black uppercase tracking-[0.2em] text-cyan-300">{plan.type}</div>
+              <h3 className="mt-2 text-xl font-bold text-white">{plan.name}</h3>
+              <div className="mt-2 text-3xl font-black text-white">{plan.price}</div>
+              <p className="mt-3 text-sm leading-7 text-slate-300">{plan.description}</p>
+              <ul className="mt-4 space-y-1 text-xs leading-7 text-slate-400">
+                {plan.features.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
+              <Link
+                href="/contact"
+                className="mt-6 inline-flex rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-xs font-bold uppercase tracking-widest text-white transition hover:border-cyan-300/60 hover:bg-cyan-300/10"
+              >
+                Get pass
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="text-sm font-black uppercase tracking-[0.35em] text-cyan-300">Hardware</div>
